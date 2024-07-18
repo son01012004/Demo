@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    background-image: url('https://i.pinimg.com/originals/cd/9a/8f/cd9a8fcac1c85c45f0bbfac2422965fb.jpg');
+    background-size: cover; /* Hình nền sẽ được co giãn hoặc thu nhỏ để vừa với khung hình */
+    background-position: center;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header .logo:hover {
+    color: #ffeb3b;
+}
+header .menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .user-options {
+    display: flex;
+    align-items: center;
+}
+header .user-options a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+header .user-options a:hover {
+    color: #ffeb3b;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền xám đậm với độ trong suốt */
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.logo img {
+    width: 80px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    height: 80px; /* Giữ tỉ lệ khung hình */
+    
+}
+
+.container {
+    margin-top: 150px;
+    padding-top:100px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #8200ea;
+    color: #fff;
+}
+
+#footer{
+    margin-top: 40px;
+    background-color: rgb(255, 253, 247);
+    border-top: 4px solid rgb(255, 198, 29);
+    }
+    #footer>div{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    }
+    #footer ul>li{
+    list-style: none;
+    }
+    #footer ul>li img{
+        width: 92px;
+        height: 32px;
+        }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Kỹ sư phần mềm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></span>
+           <a href="index.html"><img src="img/Screenshot 2024-05-19 225148.png" alt="Logo"></a> 
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm điện tử...">
+        </div>
+        <div class="user-options">
+            <a href="#"><i class="fas fa-user"></i> Đăng nhập</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng </span></a>
+        </div>
+    </header>
+    <aside id="sidebar">
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#"><i class="fas fa-star"></i> Sản phẩm nổi bật</a>
+            <div id="product-toggle">
+                <a href="#"><i class="fas fa-laptop"></i> Sản phẩm <i class="fas fa-angle-right"></i></a>
+                <div id="product-submenu" style="display: none;">
+                    <a href="#"><i class="fas fa-mobile-alt"></i> Điện thoại</a>
+                    <a href="#"><i class="fas fa-tablet-alt"></i> Máy tính bảng</a>
+                    <a href="#"><i class="fas fa-laptop"></i> Laptop</a>
+                    <a href="#"><i class="fas fa-headphones-alt"></i> Phụ kiện</a>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-phone"></i> Liên hệ</a>
+        </nav>
+    </aside>
+    <div id="content">
+        <div class="filter-form">
+            <select id="filter-category">
+                <option value="all">Tất cả danh mục</option>
+                <option value="category1">Asus</option>
+                <option value="category2">Lenovo</option>
+                <option value="category3">Macbook</option>
+            </select>
+            <select id="filter-price">
+                <option value="all">Tất cả giá</option>
+                <option value="0-100">$0 - $100</option>
+                <option value="101-200">$101 - $200</option>
+                <option value="201-300">$201 - $300</option>
+            </select>
+            <select id="filter-rating">
+                <option value="all">Tất cả xếp hạng</option>
+                <option value="1">1 sao trở lên</option>
+                <option value="2">2 sao trở lên</option>
+                <option value="3">3 sao trở lên</option>
+                <option value="4">4 sao trở lên</option>
+                <option value="5">5 sao</option>
+            </select>
+            <button onclick="filterProducts()">Lọc</button>
+            <button id="reset-filters" style="display: none;" onclick="resetFilters()">Hủy lọc</button>
+        </div>
+        <div id="no-products" class="no-products" style="display: none;">
+            Không có sản phẩm nào khớp với tiêu chí tìm kiếm.
+        </div>
+        <div  class="product">
+            <a href="san_pham1.html">
+                <img src="img/sp1.jpg" alt="Asus F15 Gaming">
+                <div  class="product-info">
+                    <h3>Asus F15 Gaming</h3>
+                    <div class="price">$120</div>
+                    <div class="rating">★★★★☆</div>
+                    <div class="category" style="display: none;">category1</div>
+                </div>
+            </a>
+        </div>
+        
+       
+        <div class="product">
+            <a href="san_pham1.html">
+                <img src="img/th.jpg" alt="Lennovo legion 5">
+                <div class="product-info">
+                    <h3>Lennovo legion 5</h3>
+                    <div class="price">$220</div>
+                    <div class="rating">★★★☆☆</div>
+                    <div class="category" style="display: none;">category2</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="product">
+            <a href="san_pham1.html">
+                <img src="img/R (2).jpg" alt="Macbook EM1">
+                <div class="product-info">
+                    <h3>Macbook EM1</h3>
+                    <div class="price">$320</div>
+                    <div class="rating">★★☆☆☆</div>
+                    <div class="category" style="display: none;">category3</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="product">
+            <a href="san_pham1.html">
+                <img src="img/sp1.jpg" alt="Asus A15">
+                <div class="product-info">
+                    <h3>Asus A15</h3>
+                    <div class="price">$420</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="category" style="display: none;">category1</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="product">
+            <a href="san_pham1.html">
+                <img src="img/R (1).jpg" alt="Macbook Pro">
+                <div class="product-info">
+                    <h3>Macbook Pro</h3>
+                    <div class="price">$520</div>
+                    <div class="rating">★★★☆☆</div>
+                    <div class="category" style="display: none;">category3</div>
+                </div>
+            </a>
+        </div>
+       
+        <div class="product">
+            <a href="san_pham1.html">
+                <img src="img/th.jpg" alt="Máy tính bảng">
+                <div class="product-info">
+                    <h3>Lenovo Thinkpad</h3>
+                    <div class="price">$520</div>
+                    <div class="rating">★★★☆☆</div>
+                    <div class="category" style="display: none;">category2</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="download_app">
+            <ul>
+                <h3>Tải ứng dụng</h3>
+                <li>
+                    <a href="">
+                        <img src="img/footer-1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="customer_support">
+            <ul>
+                <h3>Hỗ trợ khách hàng</h3>
+                <li>Trung tâm trợ giúp</li>
+                <li>An toàn mua bán</li>
+                <li>Liên hệ hỗ trợ</li>
+            </ul>
+        </div>
+        <div class="Website">
+            <ul>
+                <h3>Website</h3>
+                <li>Giới thiệu</li>
+                <li>Chính sách bảo mật</li>
+                <li>Giải quyết tranh chấp</li>
+                <li>Tuyển dụng</li>
+                <li>Blog</li>
+                
+            </ul>
+        </div>
+        <div class="connect"></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

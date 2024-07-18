@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - ElectroShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/ttsp.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></span>
+           <a href="index.html"><img src="img/Screenshot 2024-05-19 225148.png" alt="Logo"></a> 
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        <div class="user-options">
+            <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng </a>
+        </div>
+    </header>
+    <aside id="sidebar">
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#"><i class="fas fa-star"></i> Sản phẩm nổi bật</a>
+            <div id="product-toggle">
+                <a href="#"><i class="fas fa-laptop"></i> Sản phẩm <i class="fas fa-angle-right"></i></a>
+                <div id="product-submenu" style="display: none;">
+                    <a href="#"><i class="fas fa-mobile-alt"></i> Điện thoại</a>
+                    <a href="#"><i class="fas fa-tablet-alt"></i> Máy tính bảng</a>
+                    <a href="#"><i class="fas fa-laptop"></i> Laptop</a>
+                    <a href="#"><i class="fas fa-headphones-alt"></i> Phụ kiện</a>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-phone"></i> Liên hệ</a>
+        </nav>
+    </aside>
+    <div id="content">
+        <div class="product-details">
+            <div class="image-slider">
+                <img src="img/sp2.jpg" alt="Điện thoại" class="main-image">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+                <div class="thumbnail-container">
+                    <img src="img/sp2.jpg" alt="Điện thoại" class="thumbnail">
+                    <img src="img/sp3.jpg" alt="Điện thoại" class="thumbnail">
+                    <img src="img/sp4.jpg" alt="Điện thoại" class="thumbnail">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Điện thoại</h1>
+                <div class="price">$420</div>
+                <div class="rating">★★★★★</div>
+                <div class="description">
+                    Đây là mô tả chi tiết về sản phẩm. Sản phẩm này có nhiều tính năng nổi bật và hiệu suất tuyệt vời.
+                </div>
+                <div class="options">
+                    <label for="color">Chọn màu sắc:</label>
+                    <select id="color">
+                        <option value="black">Đen</option>
+                        <option value="white">Trắng</option>
+                        <option value="blue">Xanh</option>
+                    </select>
+                    <label for="chip">Chọn chip:</label>
+                    <select id="chip">
+                        <option value="chip1">core i3</option>
+                        <option value="chip2">core i7</option>
+                        <option value="chip3">core i5</option>
+                    </select>
+                    <label for="quantity">Chọn số lượng:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                <a href="thanh_toan.html"><button class="buy-now">Mua ngay</button></a>
+            </div>
+            <div class="review-section">
+                <h2>Đánh giá và Bình luận</h2>
+                <div class="review">
+                    <div class="reviewer">Nguyễn Văn A</div>
+                    <div class="review-text">Sản phẩm rất tốt, chất lượng tuyệt vời!</div>
+                </div>
+                <div class="review">
+                    <div class="reviewer">Trần Thị B</div>
+                    <div class="review-text">Giá cả hợp lý, sẽ mua thêm sản phẩm khác của shop.</div>
+                </div>
+                <div class="add-review">
+                    <textarea placeholder="Viết đánh giá của bạn..."></textarea>
+                    <button>Gửi đánh giá</button>
+                </div>
+            </div>
+        </div>
+        <div class="related-products">
+            <h2>Sản phẩm liên quan</h2>
+            <div class="product">
+                <a href="san_pham1.html">
+                    <img src="img/th.jpg" alt="Thinkpad">
+                    <div class="info">
+                        <h3>Thinkpad</h3>
+                        <div class="price">$220</div>
+                        <div class="rating">★★★☆☆</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="product">
+                <a href="san_pham1.html">
+                    <img src="img/R (1).jpg" alt="Macbook">
+                    <div class="info">
+                        <h3>Macbook EM1</h3>
+                        <div class="price">$320</div>
+                        <div class="rating">★★☆☆☆</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="product">
+                <a href="san_pham1.html">
+                    <img src="img/sp3.jpg" alt="Asus">
+                    <div class="info">
+                        <h3>Asus F15</h3>
+                        <div class="price">$120</div>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="download_app">
+            <ul>
+                <h3>Tải ứng dụng</h3>
+                <li>
+                    <a href="">
+                        <img src="img/footer-1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="customer_support">
+            <ul>
+                <h3>Hỗ trợ khách hàng</h3>
+                <li>Trung tâm trợ giúp</li>
+                <li>An toàn mua bán</li>
+                <li>Liên hệ hỗ trợ</li>
+            </ul>
+        </div>
+        <div class="Website">
+            <ul>
+                <h3>Website</h3>
+                <li>Giới thiệu</li>
+                <li>Chính sách bảo mật</li>
+                <li>Giải quyết tranh chấp</li>
+                <li>Tuyển dụng</li>
+                <li>Blog</li>
+                
+            </ul>
+        </div>
+        <div class="connect"></div>
+    </footer>
+   <script src="js/ttsp.js"></script>
+</body>
+</html>

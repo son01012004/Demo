@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - ElectroShop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/tt.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+           <a href="index.html"><img src="img/Screenshot 2024-05-19 225148.png" alt="Logo"></a> 
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm điện tử...">
+        </div>
+        <div class="user-options">
+            <a href="#"><i class="fas fa-user"></i> Đăng nhập</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng </span></a>
+        </div>
+    </header>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Thông Tin Thanh Toán</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên:</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại:</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Địa chỉ giao hàng:</label>
+                                <textarea class="form-control" id="address" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Thành phố:</label>
+                                <input type="text" class="form-control" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postalCode">Mã bưu điện:</label>
+                                <input type="text" class="form-control" id="postalCode" required>
+                            </div>
+                            <h3>Phương Thức Thanh Toán</h3>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                                    <label class="form-check-label" for="creditCard">Thẻ tín dụng</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="bankTransfer" name="paymentMethod" value="bankTransfer">
+                                    <label class="form-check-label" for="bankTransfer">Chuyển khoản ngân hàng</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="cod" name="paymentMethod" value="cod">
+                                    <label class="form-check-label" for="cod">Thanh toán khi nhận hàng (COD)</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Đặt Hàng</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Tóm Tắt Đơn Hàng</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Điện thoại</td>
+                                    <td>1</td>
+                                    <td>$420</td>
+                                </tr>
+                                <tr>
+                                    <td>Phụ kiện</td>
+                                    <td>2</td>
+                                    <td>$50</td>
+                                </tr>
+                                <tr class="font-weight-bold">
+                                    <td colspan="2">Tổng cộng</td>
+                                    <td>$470</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="download_app">
+            <ul>
+                <h3>Tải ứng dụng</h3>
+                <li>
+                    <a href="">
+                        <img src="img/footer-1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/footer-3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="customer_support">
+            <ul>
+                <h3>Hỗ trợ khách hàng</h3>
+                <li>Trung tâm trợ giúp</li>
+                <li>An toàn mua bán</li>
+                <li>Liên hệ hỗ trợ</li>
+            </ul>
+        </div>
+        <div class="Website">
+            <ul>
+                <h3>Website</h3>
+                <li>Giới thiệu</li>
+                <li>Chính sách bảo mật</li>
+                <li>Giải quyết tranh chấp</li>
+                <li>Tuyển dụng</li>
+                <li>Blog</li>
+                
+            </ul>
+        </div>
+        <div class="connect"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

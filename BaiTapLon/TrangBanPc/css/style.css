@@ -1,0 +1,262 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    background-image: url('https://i.pinimg.com/originals/cd/9a/8f/cd9a8fcac1c85c45f0bbfac2422965fb.jpg');
+    background-size: cover; /* Hình nền sẽ được co giãn hoặc thu nhỏ để vừa với khung hình */
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền xám đậm với độ trong suốt */
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.logo img {
+    width: 80px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    height: 80px; /* Giữ tỉ lệ khung hình */
+    
+}
+
+#sidebar {
+    width: 220px;
+    background-image: url('https://images.unsplash.com/photo-1550399105-23c75d86968f');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: -220px;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 999;
+    overflow: auto;
+    transition: left 0.3s ease;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header .logo:hover {
+    color: #ffeb3b;
+}
+header .menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .user-options {
+    display: flex;
+    align-items: center;
+}
+header .user-options a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+header .user-options a:hover {
+    color: #ffeb3b;
+}
+
+#sidebar
+{
+    margin-top: 40px;
+}
+
+#sidebar.show {
+    left: 0;
+}
+#sidebar nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+#sidebar nav a:hover {
+    background-color: #64B5F6;
+}
+#sidebar nav a i {
+    margin-right: 10px;
+}
+#content {
+    padding: 20px;
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: margin-left 0.3s;
+    margin-left: 0;
+}
+#content.sidebar-visible {
+    margin-left: 240px;
+}
+.product {
+    flex: 1 1 calc(33% - 40px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    
+}
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Hình ảnh sẽ bao phủ toàn bộ khung mà không bị biến dạng */
+    transition: transform 0.3s ease;
+}
+.product:hover img {
+    transform: scale(1.05);
+}
+.product .product-info {
+    padding: 15px;
+}
+.product .product-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+.product:hover .product-info h3 {
+    color: #2196F3;
+    
+}
+.product a {
+    text-decoration: none;
+}
+.product .product-info .price {
+    color: #b12704;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.product .product-info .rating {
+    color: #ffa41c;
+}
+#footer{
+margin-top: 40px;
+background-color: rgb(255, 253, 247);
+border-top: 4px solid rgb(255, 198, 29);
+}
+#footer>div{
+width: 20%;
+display: inline-block;
+vertical-align: top;
+}
+#footer ul>li{
+list-style: none;
+}
+.download_app img{
+width: 92px;
+height: 32px;
+}
+#product-submenu {
+    display: none;
+    padding-left: 20px;
+}
+#product-submenu a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+#product-submenu a:hover {
+    color: #ffeb3b;
+}
+.filter-form {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.filter-form select, .filter-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: border-color 0.3s;
+}
+.filter-form select:focus, .filter-form input:focus {
+    border-color: #2196F3;
+}
+.filter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.filter-form button:hover {
+    background-color: #64B5F6;
+    transform: translateY(-2px);
+}
+.no-products {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+  /* Quy tắc CSS mới để xử lý trường hợp chỉ có một sản phẩm */
+  #content.single-product .product {
+        flex: 1 1 calc(100% - 40px);
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+@media (max-width: 768px) {
+    header .menu-icon {
+        display: block;
+    }
+    #content {
+        margin-left: 0;
+    }
+    .product {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+
